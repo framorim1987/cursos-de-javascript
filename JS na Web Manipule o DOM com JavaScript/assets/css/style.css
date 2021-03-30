@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #93a5cf 0%, #e4efe9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.todo-list {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  font-family: "Space Mono", monospace;
+  border-radius: 15px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  min-width: 400px;
+  min-height: 500px;
+}
+
+.title {
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  border-radius: 15px 15px 0 0;
+  font-family: "BioRhyme", serif;
+  color: #F1F1F1;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.form-input,
+.form-button {
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-input {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #F1F1F1;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-button {
+  border: 1px;
+  background-color: #487699;
+  color: #F1F1F1;
+  padding: 0 30px;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  transition: .3s;
+}
+
+.form-button:hover {
+  background-color: #538bb6;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F6F1D1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 1rem 3rem;
+}
+
+.check-button, .delete-button {
+  background-color: #F6F1D1;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.task.done .check-button {
+  background-color: #46494C;
+  color: #F6F1D1;
+}
+
+.check-icon {
+  display: block;
+  padding: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.task.done .check-icon {
+  background-color: #0B2027;
+}
+
+.content {
+  margin: 0;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=style.css.map */
